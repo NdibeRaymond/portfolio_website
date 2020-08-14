@@ -744,6 +744,10 @@ td, th {
   bottom: 0;
 }
 
+.container {
+	padding-bottom: 2em;
+}
+
 .container.fullwidth {
   width: 100%;
 }
@@ -1069,6 +1073,25 @@ h1, h2, h3, h4, h5, h6 {
   padding: 30px 50px 30px 30px;
   background: #f9f9ff;
   border-left: 2px solid #8490ff;
+}
+
+.about-left {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.about-left h4 {
+	width: 100%;
+	display: block;
+}
+
+.skill {
+  color: #3e3e3e;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  margin-right: 0.7em;
 }
 
 .progress-table-wrap {
@@ -1875,6 +1898,10 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 400px;
     overflow-x: hidden;
   }
+
+  .about-left {
+  flex-direction: row;
+}
 }
 
 .default-header {
